@@ -58,14 +58,7 @@ class FreeplayState extends MusicBeatState
 
 	public static function loadDiff(diff:Int, format:String, name:String, array:Array<SwagSong>)
 	{
-		try 
-		{
 			array.push(Song.loadFromJson(Highscore.formatSong(format, diff), name));
-		}
-		catch(ex)
-		{
-			// do nada
-		}
 	}
 
 	override function create()
